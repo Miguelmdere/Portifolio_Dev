@@ -30,11 +30,15 @@
           ><span class="logo-bracket">&gt;</span>
         </a>
         <ul class="nav-links" id="navLinks">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#sobre" data-i18n="nav.sobre">Sobre</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#projetos" data-i18n="nav.projetos">Projetos</a></li>
+          <li><a href="#contato" data-i18n="nav.contato">Contato</a></li>
         </ul>
+        <button class="lang-btn" id="langBtn" aria-label="Trocar idioma">
+          <span class="lang-flag">🌐</span>
+          <span id="langLabel">EN</span>
+        </button>
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
@@ -47,19 +51,23 @@
         <div class="hero-grid"></div>
       </div>
       <div class="hero-content">
-        <p class="hero-greeting">Olá, eu sou</p>
+        <p class="hero-greeting" data-i18n="hero.greeting">Olá, eu sou</p>
         <h1 class="hero-name">Miguel Marocco<br /><span>De Ré</span></h1>
         <p class="hero-role">
           <span class="typed-text" id="typedText"></span
           ><span class="cursor">|</span>
         </p>
-        <p class="hero-desc">
+        <p class="hero-desc" data-i18n-html="hero.desc">
           Analista QA na <strong>Loy Legal</strong> · Chapecó, SC &mdash;
           apaixonado por construir aplicações web robustas do front ao back.
         </p>
         <div class="hero-btns">
-          <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
-          <a href="#contato" class="btn btn-outline">Entrar em Contato</a>
+          <a href="#projetos" class="btn btn-primary" data-i18n="hero.btn1"
+            >Ver Projetos</a
+          >
+          <a href="#contato" class="btn btn-outline" data-i18n="hero.btn2"
+            >Entrar em Contato</a
+          >
         </div>
         <div class="hero-socials">
           <a
@@ -88,25 +96,31 @@
     <!-- ─── SOBRE ──────────────────────────────────────────────── -->
     <section id="sobre" class="section sobre">
       <div class="container">
-        <h2 class="section-title">Sobre <span>Mim</span></h2>
+        <h2 class="section-title" data-i18n-html="sobre.title">
+          Sobre <span>Mim</span>
+        </h2>
         <div class="sobre-grid">
           <div class="sobre-avatar">
             <div class="avatar-ring">
-              <div class="avatar-placeholder">
-                <i class="fas fa-user-code"></i>
-              </div>
+              <img
+                src="assets/foto_portifólio.jpg"
+                alt="Miguel Marocco De Ré"
+                class="avatar-photo"
+              />
             </div>
-            <div class="avatar-badge">Full Stack Dev</div>
+            <div class="avatar-badge" data-i18n="sobre.badge">
+              Full Stack Dev
+            </div>
           </div>
           <div class="sobre-texto">
-            <p>
+            <p data-i18n-html="sobre.p1">
               Sou <strong>Miguel Marocco De Ré</strong>, atualmente atuando como
               <strong>Analista QA</strong> na empresa
               <strong>Loy Legal</strong>, em Chapecó/SC. Minha missão é garantir
               a qualidade de software enquanto construo minha jornada rumo ao
               desenvolvimento full stack.
             </p>
-            <p>
+            <p data-i18n-html="sobre.p2">
               Tenho paixão por criar soluções completas — desde interfaces
               intuitivas com
               <strong>React</strong> e <strong>TypeScript</strong> até APIs
@@ -118,15 +132,21 @@
             <div class="sobre-stats">
               <div class="stat">
                 <span class="stat-num">3+</span>
-                <span class="stat-label">Projetos no GitHub</span>
+                <span class="stat-label" data-i18n="sobre.stat1"
+                  >Projetos no GitHub</span
+                >
               </div>
               <div class="stat">
                 <span class="stat-num">10+</span>
-                <span class="stat-label">Tecnologias</span>
+                <span class="stat-label" data-i18n="sobre.stat2"
+                  >Tecnologias</span
+                >
               </div>
               <div class="stat">
                 <span class="stat-num">QA</span>
-                <span class="stat-label">Background Profissional</span>
+                <span class="stat-label" data-i18n="sobre.stat3"
+                  >Background Profissional</span
+                >
               </div>
             </div>
           </div>
@@ -137,8 +157,10 @@
     <!-- ─── SKILLS ─────────────────────────────────────────────── -->
     <section id="skills" class="section skills">
       <div class="container">
-        <h2 class="section-title">Minhas <span>Skills</span></h2>
-        <p class="section-sub">
+        <h2 class="section-title" data-i18n-html="skills.title">
+          Minhas <span>Skills</span>
+        </h2>
+        <p class="section-sub" data-i18n="skills.sub">
           Tecnologias que utilizo para construir projetos do início ao fim
         </p>
         <div class="skills-grid">
@@ -189,8 +211,10 @@
     <!-- ─── PROJETOS ───────────────────────────────────────────── -->
     <section id="projetos" class="section projetos">
       <div class="container">
-        <h2 class="section-title">Meus <span>Projetos</span></h2>
-        <p class="section-sub">
+        <h2 class="section-title" data-i18n-html="projetos.title">
+          Meus <span>Projetos</span>
+        </h2>
+        <p class="section-sub" data-i18n="projetos.sub">
           Alguns dos projetos que desenvolvi por conta própria
         </p>
         <div class="projetos-grid">
@@ -209,8 +233,8 @@
                 </a>
               </div>
             </div>
-            <h3>Lista de Compras</h3>
-            <p>
+            <h3 data-i18n="proj1.title">Lista de Compras</h3>
+            <p data-i18n="proj1.desc">
               Aplicação web para gerenciamento de lista de supermercado. Permite
               adicionar, remover e organizar itens de forma simples e intuitiva.
             </p>
@@ -236,8 +260,8 @@
                 </a>
               </div>
             </div>
-            <h3>Conversor de Moedas</h3>
-            <p>
+            <h3 data-i18n="proj2.title">Conversor de Moedas</h3>
+            <p data-i18n="proj2.desc">
               Conversor de moedas funcional desenvolvido em JavaScript puro, sem
               dependência de API externa — utiliza lógica própria para conversão
               em tempo real.
@@ -264,8 +288,8 @@
                 </a>
               </div>
             </div>
-            <h3>Palácio Imperial do Japão</h3>
-            <p>
+            <h3 data-i18n="proj3.title">Palácio Imperial do Japão</h3>
+            <p data-i18n="proj3.desc">
               Projeto web dedicado ao Palácio Imperial do Japão, explorando HTML
               e CSS para criar uma página informativa com design temático.
             </p>
@@ -282,7 +306,8 @@
             rel="noopener"
             class="btn btn-outline"
           >
-            <i class="fab fa-github"></i> Ver mais no GitHub
+            <i class="fab fa-github"></i>
+            <span data-i18n="projetos.more">Ver mais no GitHub</span>
           </a>
         </div>
       </div>
@@ -291,8 +316,10 @@
     <!-- ─── CONTATO ────────────────────────────────────────────── -->
     <section id="contato" class="section contato">
       <div class="container">
-        <h2 class="section-title">Entre em <span>Contato</span></h2>
-        <p class="section-sub">
+        <h2 class="section-title" data-i18n-html="contato.title">
+          Entre em <span>Contato</span>
+        </h2>
+        <p class="section-sub" data-i18n="contato.sub">
           Aberto a oportunidades, freelas e colaborações. Me manda uma mensagem!
         </p>
         <div class="contato-grid">
@@ -353,10 +380,10 @@
     <!-- ─── FOOTER ─────────────────────────────────────────────── -->
     <footer class="footer">
       <div class="container">
-        <p>
+        <p data-i18n-html="footer.copy">
           Desenvolvido por <strong>Miguel Marocco De Ré</strong> &mdash; 2026
         </p>
-        <p class="footer-sub">
+        <p class="footer-sub" data-i18n-html="footer.sub">
           Feito com <i class="fas fa-heart"></i> e muito café
         </p>
       </div>

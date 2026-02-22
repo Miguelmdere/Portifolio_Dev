@@ -244,6 +244,36 @@ img {
   transform: translateY(-7px) rotate(-45deg);
 }
 
+/* Language Switch Button */
+.lang-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all var(--transition);
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.lang-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(0, 212, 255, 0.06);
+}
+
+.lang-flag {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
 /* ════════════════════════════════════════════════════════
    HERO
 ════════════════════════════════════════════════════════ */
@@ -443,6 +473,15 @@ img {
   justify-content: center;
   font-size: 5rem;
   color: var(--text-muted);
+}
+
+.avatar-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .avatar-badge {
